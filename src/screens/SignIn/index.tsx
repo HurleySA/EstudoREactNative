@@ -1,6 +1,6 @@
 import DeliveryImage from "../../../assets/delivery.png";
 import { Button, ButtonText, Container, ContainerInformations, ContainerNavigation, ContainerTexts, DescriptionText, Image, StyledText } from './style';
-export const SignIn = ({navigation}) => {
+export const SignIn = ({navigation}: any) => {
     return (
         <Container>
             <Image resizeMode='center' source={DeliveryImage} />
@@ -15,7 +15,7 @@ export const SignIn = ({navigation}) => {
               </DescriptionText>
             </ContainerInformations>
             <ContainerNavigation>
-                <Button onPress={() => navigation.navigate('House')} >
+                <Button onPress={() => navigation.navigate('Menu')} >
                     <ButtonText>Order now</ButtonText>
                 </Button>
             </ContainerNavigation>
